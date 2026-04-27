@@ -3,179 +3,355 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Silas Kenneth - Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Silas Kenneth – Software Engineer</title>
 </head>
 <body>
-    <header>
+    <header id="site-header">
         <nav>
-            <div class="logo">SK</div>
+            <a href="#hero" class="logo">SK</a>
             <ul>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
+        <ul class="mobile-menu" id="mobile-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
+
     <main>
         <section id="hero">
-            <h1>Silas Kenneth</h1>
-            <h2>Software Engineer</h2>
-            <p>Versatile full-stack developer building modern web applications and scalable backend systems</p>
-            <div class="cta">
-                <a href="#contact" class="primary-btn">Get in touch</a>
-                <a href="#projects" class="secondary-btn">View my work</a>
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fas fa-code"></i> Full-Stack Developer</span>
+                <h1>Silas Kenneth</h1>
+                <p class="hero-subtitle">Software Engineer</p>
+                <p class="hero-description">Versatile full-stack developer building modern web applications and scalable backend systems. Passionate about clean architecture and elegant solutions.</p>
+                <div class="cta">
+                    <a href="#contact" class="primary-btn"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+                    <a href="#projects" class="secondary-btn"><i class="fas fa-eye"></i> View My Work</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/SilasKenneth" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/silaskenneth" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:silaskenneth@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <a href="#about" class="hero-scroll" aria-label="Scroll to About">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section id="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a versatile full-stack software engineer with experience in backend development, API design, and modern web applications. I specialize in building scalable, maintainable solutions using diverse technologies including Python/Django, .NET, PHP/Laravel, JavaScript/TypeScript, and Java/Spring.</p>
+                    <p>I have a passion for algorithm visualization, microservices architecture, and creating robust data management systems.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Frameworks</span>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a versatile full-stack software engineer with experience in backend development, API design, and modern web applications. I specialize in building scalable, maintainable solutions using diverse technologies including Python/Django, .NET, PHP/Laravel, JavaScript/TypeScript, and Java/Spring. I have a passion for algorithm visualization, microservices architecture, and creating robust data management systems.</p>
-        </section>
 
-        <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-        <div class="skill-card">
-        <i class="fas fa-code"></i>
-        <h3>Languages</h3>
-        <p>Python, C#, JavaScript, TypeScript, PHP, Java, SQL</p>
+        <div class="full-width-section">
+            <section id="skills">
+                <div class="section-header">
+                    <h2>Technical Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>Languages</h3>
+                        <p>Python, C#, JavaScript, TypeScript, PHP, Java, SQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend Frameworks</h3>
+                        <p>Django, .NET Core, ASP.NET, Laravel, Spring Boot, Express.js</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-desktop"></i></div>
+                        <h3>Frontend</h3>
+                        <p>Vue.js, React, HTML5, CSS3, JavaScript ES6+</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>Databases</h3>
+                        <p>PostgreSQL, SQL Server, MongoDB, MySQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools &amp; DevOps</h3>
+                        <p>Docker, AWS, Git, CI/CD, Terraform, Ansible, Packer, Jenkins</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Specializations</h3>
+                        <p>REST APIs, Microservices, Algorithm Visualization, System Design, Infrastructure as Code</p>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="skill-card">
-        <i class="fas fa-server"></i>
-        <h3>Backend Frameworks</h3>
-        <p>Django, .NET Core, ASP.NET, Laravel, Spring Boot, Express.js</p>
-        </div>
-        <div class="skill-card">
-        <i class="fas fa-desktop"></i>
-        <h3>Frontend</h3>
-        <p>Vue.js, React, HTML5, CSS3, JavaScript ES6+</p>
-        </div>
-        <div class="skill-card">
-        <i class="fas fa-database"></i>
-        <h3>Databases</h3>
-        <p>PostgreSQL, SQL Server, MongoDB, MySQL</p>
-        </div>
-        <div class="skill-card">
-        <i class="fas fa-tools"></i>
-        <h3>Tools & DevOps</h3>
-        <p>Docker, AWS, Git, CI/CD, Terraform, Ansible, Packer, Jenkins</p>
-        </div>
-        <div class="skill-card">
-        <i class="fas fa-cogs"></i>
-        <h3>Specializations</h3>
-        <p>REST APIs, Microservices, Algorithm Visualization, System Design, Infrastructure as Code</p>
-        </div>
-        </div>
-        </section>
 
         <section id="projects">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-        <article class="project-card">
-        <h3>Fast Food API v2</h3>
-        <p>A comprehensive REST API for food delivery service built with Python and Django REST Framework. Features order management, user authentication, and real-time updates.</p>
-        <div class="project-links">
-        <a href="https://github.com/SilasKenneth/fast-food-api-v2" target="_blank"><i class="fab fa-github"></i> View Code</a>
-        </div>
-        </article>
-        <article class="project-card">
-        <h3>Sponsorship Management System</h3>
-        <p>Full-stack web application for managing student sponsorships built with Django backend and Vue.js frontend. Includes advanced UI components with Ant Design.</p>
-        <div class="project-links">
-        <a href="https://github.com/SilasKenneth/sponsorship" target="_blank"><i class="fab fa-github"></i> View Code</a>
-        </div>
-        </article>
-        <article class="project-card">
-        <h3>GitHub Search Laravel App</h3>
-        <p>PHP/Laravel application with Vue.js frontend for searching GitHub users. Demonstrates modern full-stack development with API integration.</p>
-        <div class="project-links">
-        <a href="https://github.com/SilasKenneth/githubsearch-laravel" target="_blank"><i class="fab fa-github"></i> View Code</a>
-        </div>
-        </article>
-        <article class="project-card">
-        <h3>Employee Service API</h3>
-        <p>TypeScript-based microservice for employee records management. Built with modern Node.js patterns and comprehensive API documentation.</p>
-        <div class="project-links">
-        <a href="https://github.com/SilasKenneth/employees_service" target="_blank"><i class="fab fa-github"></i> View Code</a>
-        </div>
-        </article>
-        <article class="project-card">
-        <h3>BFS Algorithm Visualizer</h3>
-        <p>Interactive JavaScript application for visualizing Breadth-First Search algorithms on grids. Educational tool with dynamic pathfinding visualization.</p>
-        <div class="project-links">
-        <a href="https://github.com/SilasKenneth/bfs-visualizer" target="_blank"><i class="fab fa-github"></i> View Code</a>
-        <a href="https://silaskenneth.github.io/bfs-visualizer/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-        </div>
-        </article>
-        <article class="project-card">
-        <h3>Ride Booking API</h3>
-        <p>Java Spring Boot REST API for ride booking services. Demonstrates enterprise-level backend development with robust architecture patterns.</p>
-        <div class="project-links">
-        <a href="https://github.com/SilasKenneth/booking-api" target="_blank"><i class="fab fa-github"></i> View Code</a>
-        </div>
-        </article>
-        <article class="project-card">
-        <h3>Fast Food Fast UI</h3>
-        <p>Responsive frontend for food delivery service with modern CSS and JavaScript. Features interactive design and user-friendly interface for the Fast Food API.</p>
-        <div class="project-links">
-        <a href="https://github.com/SilasKenneth/fast-food-fast-ui" target="_blank"><i class="fab fa-github"></i> View Code</a>
-        <a href="https://silaskenneth.github.io/fast-food-fast-ui/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-        </div>
-        </article>
-        <article class="project-card">
-        <h3>VPC Terraform Infrastructure</h3>
-        <p>Infrastructure as Code using Terraform to create Virtual Private Networks on AWS. Demonstrates cloud architecture and DevOps automation skills.</p>
-        <div class="project-links">
-        <a href="https://github.com/SilasKenneth/vpc_terraform" target="_blank"><i class="fab fa-github"></i> View Code</a>
-        </div>
-        </article>
-        <article class="project-card">
-        <h3>Evaluation System PHP</h3>
-        <p>Web application for evaluating class lecturers and managing attendance. Built with PHP featuring user management and reporting capabilities.</p>
-        <div class="project-links">
-        <a href="https://github.com/SilasKenneth/evaluationPHP" target="_blank"><i class="fab fa-github"></i> View Code</a>
-        </div>
-        </article>
-        <article class="project-card">
-        <h3>Data Structures & Algorithms</h3>
-        <p>Python implementations of fundamental data structures and algorithms. Educational resource demonstrating problem-solving and algorithmic thinking.</p>
-        <div class="project-links">
-        <a href="https://github.com/SilasKenneth/Data-Structures-and-Algorithms" target="_blank"><i class="fab fa-github"></i> View Code</a>
-        </div>
-        </article>
-        <article class="project-card">
-        <h3>React Learning Project</h3>
-        <p>TypeScript-based React application exploring modern frontend development patterns including fragments, hooks, and component architecture.</p>
-        <div class="project-links">
-        <a href="https://github.com/SilasKenneth/react-fragments" target="_blank"><i class="fab fa-github"></i> View Code</a>
-        </div>
-        </article>
-        </div>
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3>Fast Food API v2</h3>
+                        <p>A comprehensive REST API for food delivery service built with Python and Django REST Framework. Features order management, user authentication, and real-time updates.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SilasKenneth/fast-food-api-v2" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3>Sponsorship Management System</h3>
+                        <p>Full-stack web application for managing student sponsorships built with Django backend and Vue.js frontend. Includes advanced UI components with Ant Design.</p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Full-Stack</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SilasKenneth/sponsorship" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3>GitHub Search Laravel App</h3>
+                        <p>PHP/Laravel application with Vue.js frontend for searching GitHub users. Demonstrates modern full-stack development with API integration.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">Vue.js</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SilasKenneth/githubsearch-laravel" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3>Employee Service API</h3>
+                        <p>TypeScript-based microservice for employee records management. Built with modern Node.js patterns and comprehensive API documentation.</p>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Microservice</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SilasKenneth/employees_service" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3>BFS Algorithm Visualizer</h3>
+                        <p>Interactive JavaScript application for visualizing Breadth-First Search algorithms on grids. Educational tool with dynamic pathfinding visualization.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Algorithm</span>
+                            <span class="tag">Visualization</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SilasKenneth/bfs-visualizer" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://silaskenneth.github.io/bfs-visualizer/" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3>Ride Booking API</h3>
+                        <p>Java Spring Boot REST API for ride booking services. Demonstrates enterprise-level backend development with robust architecture patterns.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SilasKenneth/booking-api" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3>Fast Food Fast UI</h3>
+                        <p>Responsive frontend for food delivery service with modern CSS and JavaScript. Features interactive design and user-friendly interface for the Fast Food API.</p>
+                        <div class="project-tags">
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SilasKenneth/fast-food-fast-ui" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://silaskenneth.github.io/fast-food-fast-ui/" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3>VPC Terraform Infrastructure</h3>
+                        <p>Infrastructure as Code using Terraform to create Virtual Private Networks on AWS. Demonstrates cloud architecture and DevOps automation skills.</p>
+                        <div class="project-tags">
+                            <span class="tag">Terraform</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SilasKenneth/vpc_terraform" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3>Evaluation System PHP</h3>
+                        <p>Web application for evaluating class lecturers and managing attendance. Built with PHP featuring user management and reporting capabilities.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">Web App</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SilasKenneth/evaluationPHP" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3>Data Structures &amp; Algorithms</h3>
+                        <p>Python implementations of fundamental data structures and algorithms. Educational resource demonstrating problem-solving and algorithmic thinking.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Education</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SilasKenneth/Data-Structures-and-Algorithms" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-body">
+                        <h3>React Learning Project</h3>
+                        <p>TypeScript-based React application exploring modern frontend development patterns including fragments, hooks, and component architecture.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Frontend</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SilasKenneth/react-fragments" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section id="contact">
-        <h2>Get In Touch</h2>
-        <div class="social-links">
-        <a href="https://github.com/SilasKenneth" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/silaskenneth" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:silaskenneth@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <p class="contact-subtitle">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+            <div class="social-links">
+                <a href="https://github.com/SilasKenneth" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/silaskenneth" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:silaskenneth@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
         </section>
-        </main>
+    </main>
 
-        <footer>
-        <p>&copy; 2024 Silas Kenneth. All rights reserved.</p>
-        </footer>
+    <footer>
+        <div class="footer-content">
+            <span class="footer-logo">SK</span>
+            <p>&copy; 2025 Silas Kenneth. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        const header = document.getElementById('site-header');
+        const backToTop = document.getElementById('back-to-top');
+        const navToggle = document.querySelector('.nav-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+                backToTop.classList.add('visible');
+            } else {
+                header.classList.remove('scrolled');
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        navToggle.addEventListener('click', () => {
+            const open = mobileMenu.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', open);
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', false);
+            });
+        });
+    </script>
 </body>
 </html>
